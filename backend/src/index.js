@@ -7,9 +7,7 @@ const routes = require('./routes');
 const app = express();
 
 //falando para express ir no corpo da req, cconverter o objeto em json
-app.use(cors(/*{
-    oring :'http://meuapp.com';
-}*/));
+app.use(cors);
 app.use(express.json());
 app.use(routes);
 
